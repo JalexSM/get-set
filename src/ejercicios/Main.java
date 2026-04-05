@@ -7,6 +7,7 @@ public class Main {
 	public static void main(String[]args) {
 	
 		ejercicio1();
+		ejercicio2();
 		
 		
 		
@@ -30,7 +31,14 @@ public class Main {
 		 
 	 }
 	
-	
+	 public static void ejercicio2() {
+		 Producto p1 = new Producto("001", "Laptop", 5000, 10);
+
+	        p1.vender(3); 
+	        p1.vender(8); 
+	        p1.setPrecio(-100);
+	        p1.setStock(-5);  
+	 }
 	
 
 }
