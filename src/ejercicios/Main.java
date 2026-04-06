@@ -43,7 +43,7 @@ public class Main {
                     	 ejercicio4();
                          break;
                      case 5:
-                    	 
+                    	 ejerciocio5();
                      break;
                      case 6:
                     	 
@@ -125,11 +125,11 @@ public class Main {
 		
 		System.out.println("\n----- curso 1 -----");
 
-	 Curso curso = new Curso("Programación", 70, 65, 80);
+	 Curso curso1 = new Curso("Programación", 70, 65, 80);
 
-     System.out.println("Curso: " + curso.getNombreCurso());
-     System.out.println("Promedio: " + curso.promedio());
-     System.out.println("Estado: " + curso.estado());
+     System.out.println("Curso: " + curso1.getNombreCurso());
+     System.out.println("Promedio: " + curso1.promedio());
+     System.out.println("Estado: " + curso1.estado());
      
      	System.out.println("\n----- curso 2 -----");
 
@@ -141,5 +141,21 @@ public class Main {
      System.out.println("Estado: " + curso2.estado());
 	 }
 	 
+	
+	public static void ejerciocio5() {
+		
+		
+		System.out.println("----- estudiante 1 -----");
+		Estudiante estudiante1 = new Estudiante(21212,"alexander",86);
+		estudiante1.mostrarBecado();
+		
+		System.out.println("----- estudiante 2 -----");
+		Estudiante estudiante2 = new Estudiante(21212,"alexander",82);
+		estudiante2.mostrarBecado();
+	}
+	
+	
+	
+	
 
 }
