@@ -6,8 +6,70 @@ public class Main {
 	static Scanner sc= new Scanner(System.in);
 	public static void main(String[]args) {
 	
-		ejercicio1();
-		ejercicio2();
+		 int opcion = 0;
+
+         while (opcion != 11) {
+        	 System.out.println("\n===== MENÚ PRINCIPAL =====");
+             System.out.println(" 1.Persona Encapsulada 	");
+             System.out.println(" 2.Producto con Validaciones 	");
+             System.out.println(" 3.Cuenta con PIN	");
+             System.out.println(" 4.	");
+             System.out.println(" 5.	");
+             System.out.println(" 6.	");
+             System.out.println(" 7.	");
+             System.out.println(" 8.	");
+             System.out.println(" 9.	");
+             System.out.println(" 10.	");
+             System.out.println(" 11. SALIR");
+             System.out.print("Seleccione una opción: ");
+             
+             try {
+                 opcion = sc.nextInt();
+
+                 switch (opcion) {
+                     case 1:
+                    	 ejercicio1();
+                         break;
+                     case 2:
+                    	 ejercicio2();
+                         break;
+                     case 3:
+                    	 ejercicio3();
+
+                         break;
+                     case 4:
+                    	 
+                         break;
+                     case 5:
+                    	 
+                     break;
+                     case 6:
+                    	 
+                      break;
+                     case 7:
+                    	  
+                      break;
+                     case 8:
+                   	  
+                         break;
+                     case 9:
+                   	  
+                         break;
+                     case 10:
+                   	  
+                         break;
+                     case 11:
+                    	    System.out.println("saliendo ... ");
+                      break;
+                     default:
+                         System.out.println("Opción inválida.");
+                 }
+             
+                 } catch (Exception e) {
+                     System.out.println("Debe ingresar un número válido.");
+                     sc.nextLine(); 
+                 }
+             }
 		
 		
 		
@@ -32,13 +94,35 @@ public class Main {
 	 }
 	
 	 public static void ejercicio2() {
-		 Producto p1 = new Producto("001", "Laptop", 5000, 10);
+		 Producto prod1 = new Producto("001", "Laptop", 5000, 10);
 
-	        p1.vender(3); 
-	        p1.vender(8); 
-	        p1.setPrecio(-100);
-	        p1.setStock(-5);  
+	        prod1.vender(3); 
+	        prod1.vender(8); 
+	        prod1.setPrecio(-100);
+	        prod1.setStock(-5);  
 	 }
+	 
+	 
+	 public static void ejercicio3() {
+		 
+		 
+		 System.out.println("\n----- cuenta 1-----");
+		 CuentaBancaria cnta1 = new CuentaBancaria("alexander",2000,1234);
+		 cnta1.retirar(1000, 1234);
+		 cnta1.mostrarSaldo();
+		 
+		 
+		 System.out.println("\n----- cuenta 2 -----");
+		 CuentaBancaria cnta2 = new CuentaBancaria("Javier",10000,4321);
+		 cnta2.retirar(1000, 1431);
+		 cnta2.mostrarSaldo();
+		 
+	 }
+	 
 	
+	 
+	 
+	 
+	 
 
 }
