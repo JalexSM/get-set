@@ -4,6 +4,9 @@ import java.util.Scanner;
 public class Main {
 	
 	static Scanner sc= new Scanner(System.in);
+	/**
+	 * @param args
+	 */
 	public static void main(String[]args) {
 	
 		 int opcion = 0;
@@ -13,9 +16,8 @@ public class Main {
              System.out.println(" 1.Persona Encapsulada 	");
              System.out.println(" 2.Producto con Validaciones 	");
              System.out.println(" 3.Cuenta con PIN	");
-             System.out.println(" 4.	");
+             System.out.println(" 4.Curso y Calificaciones	");
              System.out.println(" 5.	");
-             System.out.println(" 6.	");
              System.out.println(" 7.	");
              System.out.println(" 8.	");
              System.out.println(" 9.	");
@@ -38,7 +40,7 @@ public class Main {
 
                          break;
                      case 4:
-                    	 
+                    	 ejercicio4();
                          break;
                      case 5:
                     	 
@@ -119,10 +121,25 @@ public class Main {
 		 
 	 }
 	 
-	
-	 
-	 
-	 
+	public static void ejercicio4(){
+		
+		System.out.println("\n----- curso 1 -----");
+
+	 Curso curso = new Curso("Programación", 70, 65, 80);
+
+     System.out.println("Curso: " + curso.getNombreCurso());
+     System.out.println("Promedio: " + curso.promedio());
+     System.out.println("Estado: " + curso.estado());
+     
+     	System.out.println("\n----- curso 2 -----");
+
+
+     Curso curso2 = new Curso("Matemática", -100, -20, 90);
+
+     System.out.println("\nCurso: " + curso2.getNombreCurso());
+     System.out.println("Promedio: " + curso2.promedio());
+     System.out.println("Estado: " + curso2.estado());
+	 }
 	 
 
 }
