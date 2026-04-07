@@ -17,8 +17,9 @@ public class Main {
              System.out.println(" 2.Producto con Validaciones 	");
              System.out.println(" 3.Cuenta con PIN	");
              System.out.println(" 4.Curso y Calificaciones	");
-             System.out.println(" 5.	");
-             System.out.println(" 7.	");
+             System.out.println(" 5.Estudiante y Beca	");
+             System.out.println(" 6.Termómetro Inteligente	");
+             System.out.println(" 7.Reloj con Formato	");
              System.out.println(" 8.	");
              System.out.println(" 9.	");
              System.out.println(" 10.	");
@@ -46,10 +47,10 @@ public class Main {
                     	 ejerciocio5();
                      break;
                      case 6:
-                    	 
+                    	 ejerciocio6();
                       break;
                      case 7:
-                    	  
+                    	 ejerciocio7();
                       break;
                      case 8:
                    	  
@@ -150,12 +151,43 @@ public class Main {
 		estudiante1.mostrarBecado();
 		
 		System.out.println("----- estudiante 2 -----");
-		Estudiante estudiante2 = new Estudiante(21212,"alexander",82);
+		Estudiante estudiante2 = new Estudiante(23112,"javier",82);
 		estudiante2.mostrarBecado();
 	}
 	
-	
-	
-	
+	public static void ejerciocio6() {
+		
+		Termometro t1 = new Termometro(25);
+		
+		System.out.println("----- ----- Temperatura 1 ----- ----- ");
 
-}
+       
+        System.out.println("Temperatura en Celsius: " + t1.getCelsius());
+        System.out.println("Temperatura en Fahrenheit: " + t1.getFahrenheit());
+        
+        System.out.println("----- ----- Temperatura 2 ----- ----- ");
+
+        Termometro t2 = new Termometro(-300);
+        
+        
+		
+	}
+	
+	public static void ejerciocio7() {
+		
+	
+			System.out.println("----- Hora 1-----");
+	        Reloj reloj1 = new Reloj(14, 30, 45);
+	        System.out.println("Hora: " + reloj1.mostrarHora());
+
+	        System.out.println("----- Hora 2 -----");
+	        Reloj reloj2 = new Reloj(25, 70, -5);
+	        System.out.println("Hora 2: " + reloj2.mostrarHora());
+	    }
+		
+	
+	
+	}
+
+
+
