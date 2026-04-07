@@ -20,7 +20,7 @@ public class Main {
              System.out.println(" 5.Estudiante y Beca	");
              System.out.println(" 6.Termómetro Inteligente	");
              System.out.println(" 7.Reloj con Formato	");
-             System.out.println(" 8.	");
+             System.out.println(" 8.Contacto con Teléfono	");
              System.out.println(" 9.	");
              System.out.println(" 10.	");
              System.out.println(" 11. SALIR");
@@ -53,7 +53,8 @@ public class Main {
                     	 ejerciocio7();
                       break;
                      case 8:
-                   	  
+                    	 ejerciocio8();
+                    	 
                          break;
                      case 9:
                    	  
@@ -185,6 +186,25 @@ public class Main {
 	        System.out.println("Hora 2: " + reloj2.mostrarHora());
 	    }
 		
+	
+	public static void ejerciocio8() {
+		System.out.println("----- Contacto 1-----");
+		Contacto cont1 = new Contacto("alexander","24354312","alcas@gmail.com");
+		cont1.mostrarContacto();
+		
+		
+		
+		
+		
+		System.out.println("----- Contacto 2-----");
+		Contacto cont2 = new Contacto("jarmir","2435433212","wuilvcagmail.com");
+		cont2.mostrarContacto();
+		
+		
+		
+	}
+	
+	
 	
 	
 	}
