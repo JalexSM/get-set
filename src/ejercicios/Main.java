@@ -21,8 +21,8 @@ public class Main {
              System.out.println(" 6.Termómetro Inteligente	");
              System.out.println(" 7.Reloj con Formato	");
              System.out.println(" 8.Contacto con Teléfono	");
-             System.out.println(" 9.	");
-             System.out.println(" 10.	");
+             System.out.println(" 9.Juego con Puntaje Máximo	");
+             System.out.println(" 10.Factura con Total	");
              System.out.println(" 11. SALIR");
              System.out.print("Seleccione una opción: ");
              
@@ -57,10 +57,10 @@ public class Main {
                     	 
                          break;
                      case 9:
-                   	  
+                    	 ejerciocio9();
                          break;
                      case 10:
-                   	  
+                    	 ejerciocio10();
                          break;
                      case 11:
                     	    System.out.println("saliendo ... ");
@@ -188,6 +188,7 @@ public class Main {
 		
 	
 	public static void ejerciocio8() {
+		
 		System.out.println("----- Contacto 1-----");
 		Contacto cont1 = new Contacto("alexander","24354312","alcas@gmail.com");
 		cont1.mostrarContacto();
@@ -207,7 +208,37 @@ public class Main {
 	
 	
 	
+	public static void ejerciocio9() {
+		
+		 Jugador jugador1 = new Jugador("Alex");
+
+	        jugador1.actualizarPuntaje(50);
+	        jugador1.actualizarPuntaje(100);
+	        jugador1.actualizarPuntaje(80);   
+	        jugador1.actualizarPuntaje(-10);  
+
+	        jugador1.mostrarDatos();
+		
 	}
+	
+	public static void ejerciocio10() {
+		
+		System.out.println("----- factura 1-----");
+        Factura factura1 = new Factura("F001", "Teclado", 2, 150.00);
+
+        factura1.mostrarFactura();
+		
+        System.out.println("----- factura 2-----");
+		
+        Factura factura2 = new Factura("F002", "Audifonos", -3, -150.00); 
+
+        factura2.mostrarFactura();
+		
+	}
+	
+	
+	
+}
 
 
 
